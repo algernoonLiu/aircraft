@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../libs/jquery.js" ></script>
+<script type="text/javascript">
+	$(function(){
+		 $('#btn').click(function(){
+			 alert(1);
+	         /* $.ajax({
+	             type: "GET",
+	             url: "test.json",
+	             data: {username:$("#username").val(), content:$("#content").val()},
+	             dataType: "json",
+	             success: function(data){
+	                         $('#resText').empty();   //清空resText里面的所有内容
+	                         var html = ''; 
+	                         $.each(data, function(commentIndex, comment){
+	                               html += '<div class="comment"><h6>' + comment['username']
+	                                         + ':</h6><p class="para"' + comment['content']
+	                                         + '</p></div>';
+	                         });
+	                         $('#resText').html(html);
+	                      }
+	         }); */
+	    });
+	});
+</script>
+</head>
+<body>
+	<h1>test page</h1>
+	<button id="bth" name="bth">提交</button>
+</body>
+</html>
