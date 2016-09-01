@@ -1,2 +1,0 @@
-/*TMODJS:{"version":1,"md5":"3d052b44b757add7163bb96468682b26"}*/
-template('index','<!DOCTYPE html> <html> <head> <meta charset="UTF-8"> <title>首页</title> </head> <body> <h1>aircraft index page</h1> </body> </html>');

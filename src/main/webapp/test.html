@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>test page</h1>
+	firstName：<input name="firstName" value=""/><br/>
+	lastName：<input name="lastName" value=""/><br/>
+	email：<input name="email" value=""/><br/>
+	<input class="bth" type="submit" value="提交"/>
+</body>
+<script src="js/libs/jquery.js" ></script>
+<script type="text/javascript">
+	$(function(){
+		 $('.bth').click(function(){
+	        $.ajax({
+	             type: "GET",
+	             url: "data/people.json",
+	             data: {username:$("#username").val(), content:$("#content").val(), email:$("#email").val()},
+	             dataType: "json",
+	             success: function(data){
+	            	 console.log(data);
+	                         /* $('#resText').empty();   //清空resText里面的所有内容
+	                         var html = ''; 
+	                         $.each(data, function(commentIndex, comment){
+	                               html += '<div class="comment"><h6>' + comment['username']
+	                                         + ':</h6><p class="para"' + comment['content']
+	                                         + '</p></div>';
+	                         });
+	                         $('#resText').html(html); */
+	                      }
+	         });
+	    });
+	});
+</script>
+</html>

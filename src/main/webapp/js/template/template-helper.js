@@ -454,4 +454,8 @@ template.helper('getLogTypeText', function(type) {
             console.info('Other Type:' + 'type');
             return '其他类型';
     }
-})
+});
+
+template.helper('getNo',function(date){
+	return 12;
+});
